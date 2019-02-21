@@ -7,10 +7,14 @@ function onScoreUpdate(dropPosition, bounciness, size, bucketLabel) {
 
 function runAnalysis() {
   const [testSet, trainingSet] = splitDataset(outputs, 10);
-
+    let numberCorrect=0;
   for (let i = 0; i < testSet.length; i++) {
     const bucket = knn(trainingSet, testSet[i][0]);
+      if(bucket===testSet[i][3]){
+        numberCorrect++;
+      }
     console.log(bucket, testSet[i][3]);
+
   }
 }
 

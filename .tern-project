@@ -1,0 +1,17 @@
+{
+  "libs": [
+    "browser",
+    "ecmascript",
+    "react",
+    "lodash"
+  ],
+"loadEagerly": [
+],
+  "plugins": {
+    "node": {},
+    "webpack":{},
+    "commonjs":{},
+    "es_modules":{},
+    "modules":{}
+  }
+}
