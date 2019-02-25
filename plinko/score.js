@@ -17,15 +17,15 @@ function runAnalysis() {
   //}
   _.range(1, 15).forEach(k => {
     const accuracy = _.chain(testSet)
-      .filter(testPoint => knn(trainingSet, testPoint[0],k) === testPoint[3])
+      .filter(testPoint => knn(trainingSet, testPoint[0], k) === testPoint[3])
       .size()
       .divide(testSetSize)
       .value();
-    console.log('Accuracy', accuracy , 'for k = ',k);
+    console.log('Accuracy', accuracy, 'for k = ', k);
   });
 }
 
-function knn(data, point,k) {
+function knn(data, point, k) {
   return _.chain(data)
     .map(row => [distance(row[0], point), row[3]])
     .sortBy(row => row[0])
@@ -40,10 +40,13 @@ function knn(data, point,k) {
 }
 
 function distance(pointA, pointB) {
-    return _.chain(pointA)
-        .zip(pointB)
-        .map([a,b]) => (a-b)**2
-    .s
+  return (
+    _.chain(pointA)
+      .zip(pointB)
+      .map(([a, b]) => (a - b) ** 2)
+      .sum()
+      .value() ** 0.5
+  );
 }
 
 function splitDataset(data, testCount) {
