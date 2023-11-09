@@ -1,0 +1,62 @@
+repo_name: gautamnaik1994/MLKits
+report_id: 7f1f71c44f5e950f6ccc30fd25d6d21c
+repo_type: Public
+timestamp: '2023-11-09T18:24:28+00:00'
+requested_by: gautam-bidchat
+provider: github
+branch: master
+detected_tools_count: 5
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: Lodash
+  description: A JavaScript utility library
+  website_url: https://lodash.com
+  version: 4.17.11
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/2438/lodash.png
+  detection_source_url: knn-tf/package-lock.json
+  detection_source: regressions/package.json
+  last_updated_by: Gautam Naik
+  last_updated_on: 2019-02-21 13:26:09.000000000 Z
+- name: TensorFlow
+  description: Open Source Software Library for Machine Intelligence
+  website_url: https://www.tensorflow.org
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: Machine Learning Tools
+  image_url: https://img.stackshare.io/service/4717/FtFnqC38_400x400.png
+  detection_source: regressions/package.json
+  last_updated_by: Gautam Naik
+  last_updated_on: 2019-02-21 13:26:09.000000000 Z
